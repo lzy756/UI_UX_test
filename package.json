@@ -1,7 +1,7 @@
 {
   "name": "personal-blog",
   "version": "1.0.0",
-  "description": "个人博客 Demo",
+  "description": "基于 React + Vite 的个人博客前端页面示例",
   "type": "module",
   "scripts": {
     "dev": "vite",
