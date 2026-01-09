@@ -1,0 +1,113 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.sidebar-card {
+  background: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 0.5rem;
+}
+
+.sidebar-icon {
+  color: var(--color-cta);
+}
+
+.sidebar-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.sidebar-text {
+  color: var(--color-secondary);
+  line-height: 1.6;
+  font-family: var(--font-body);
+}
+
+.popular-list,
+.category-list {
+  list-style: none;
+}
+
+.popular-item {
+  margin-bottom: var(--spacing-sm);
+}
+
+.popular-item:last-child {
+  margin-bottom: 0;
+}
+
+.popular-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-xs);
+  border-radius: var(--radius-sm);
+  transition: background-color 0.3s ease;
+}
+
+.popular-link:hover {
+  background: var(--color-bg);
+}
+
+.popular-title {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.category-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  color: var(--color-text);
+  border-radius: var(--radius-sm);
+  transition: all 0.3s ease;
+}
+
+.category-link:hover {
+  background: var(--color-bg);
+  padding-left: 1rem;
+}
+
+.cat-name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cat-icon {
+  color: var(--color-secondary);
+  opacity: 0.5;
+}
+
+.cat-count {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: var(--color-bg);
+  padding: 0.125rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  color: var(--color-secondary);
+  transition: all 0.3s;
+}
+
+.category-link:hover .cat-count {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
